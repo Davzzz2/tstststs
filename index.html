@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake Leaderboard</title>
+    <link rel="icon" href="pennypts.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="cyber-navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="../home.html" class="nav-link">Home</a>
+                <a href="../benefits/benefits.html" class="nav-link">Benefits</a>
+		<a href="../StreamRewards/index.html" class="nav-link">Stream Rewards</a>
+                <a href="https://gambleassist.pro" class="nav-link" target="_blank">GambleAssist</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cyber-container">
+        <div class="header-section">
+            <h1 class="cyber-title">Monthly Leaderboard</h1>
+        </div>
+
+        <div class="countdown" id="countdown">
+            <div class="label">Leaderboard Starts:</div>
+            <span id="countdown-timer"></span>
+        </div>
+
+        <div class="top-ranks">
+            <div class="rank-card rank-2 fade-in" data-rank="2">
+                <div class="rank-number">2</div>
+                <img src="images/stake.webp" alt="Stake Logo" class="rank-logo">
+                <div class="rank-content">
+                    <div class="username" id="user-2">Loading...</div>
+                    <div class="wager" id="wagered-2">$0</div>
+                    <div class="reward" id="reward-2">🎁$0</div>
+                </div>
+            </div>
+
+<div class="rank-card rank-1 fade-in" data-rank="1">
+    <span class="crown">👑</span>
+    <img src="images/stake.webp" alt="Stake Logo" class="rank-logo">
+    <div class="rank-content">
+        <div class="username" id="user-1">Loading...</div>
+        <div class="wager" id="wagered-1">$0</div>
+        <div class="reward" id="reward-1">🎁$0</div>
+    </div>
+</div>
+
+            <div class="rank-card rank-3 fade-in" data-rank="3">
+                <div class="rank-number">3</div>
+                <img src="images/stake.webp" alt="Stake Logo" class="rank-logo">
+                <div class="rank-content">
+                    <div class="username" id="user-3">Loading...</div>
+                    <div class="wager" id="wagered-3">$0</div>
+                    <div class="reward" id="reward-3">🎁$0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="warning fade-in">
+            Multi accounting or wager methods will result in loss of reward
+        </div>
+
+        <div class="cyber-table-container fade-in">
+            <table class="cyber-table">
+                <thead>
+                    <tr>
+                        <th>RANK</th>
+                        <th>USER</th>
+                        <th>WAGERED</th>
+                        <th>REWARD</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body"></tbody>
+            </table>
+        </div>
+
+        <div class="cyber-social fade-in">
+            <a href="https://x.com/imEnjayy" target="_blank" class="social-link" id="twitter-link"></a>
+            <a href="https://kick.com/enjayy" target="_blank" class="social-link" id="kick-link"></a>
+            <a href="http://stake.com/?c=penny" target="_blank" class="social-link" id="stake-link"></a>
+            <a href="https://www.youtube.com/channel/UCzioTLxeMrkSkRAOxyXoTcw" target="_blank" class="social-link" id="yt-link"></a>
+	    <a id="discord-link" class="social-link" href="https://discord.gg/fns2f3cdnS" target="_blank"></a>
+        </div>
+    </div>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>
