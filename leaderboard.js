@@ -1,4 +1,4 @@
-const PROXY_URL = 'https://davzzz2.github.io/api/fetch-csv.js';
+const PROXY_URL = 'https://davzzz2.github.io/tstststs/api/fetch-csv.js';
 
 const prizesUnder75k = { 1: 100, 2: 80, 3: 60, 4: 40, 5: 20, 6: 4, 7: 4, 8: 4, 9: 4, 10: 4 };
 const prizes75k = { 1: 106.25, 2: 85, 3: 63.75, 4: 42.50, 5: 21.25, 6: 4.25, 7: 4.25, 8: 4.25, 9: 4.25, 10: 4.25 };
