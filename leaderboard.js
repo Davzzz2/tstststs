@@ -1,4 +1,4 @@
-const CSV_URL = 'https://app.trevor.io/share/view/7794ab07-e8af-4386-a596-0a44a064109c/1d/pennygambl3r_Affiliate_Stake_com_Wager_Race_Statistics.csv?seed=55';
+const PROXY_URL = '/api/fetch-csv';
 
 const prizesUnder75k = { 1: 100, 2: 80, 3: 60, 4: 40, 5: 20, 6: 4, 7: 4, 8: 4, 9: 4, 10: 4 };
 const prizes75k = { 1: 106.25, 2: 85, 3: 63.75, 4: 42.50, 5: 21.25, 6: 4.25, 7: 4.25, 8: 4.25, 9: 4.25, 10: 4.25 };
@@ -105,7 +105,7 @@ function parseCSV(data) {
 // 🚀 Update Leaderboard
 async function updateLeaderboard() {
     try {
-        const data = await fetchCSVData(CSV_URL);
+        const data = await fetchCSVData(PROXY_URL);
 
         const validData = data.sort((a, b) => a.rank - b.rank);
 
